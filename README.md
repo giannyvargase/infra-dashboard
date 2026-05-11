@@ -1,73 +1,24 @@
-# React + TypeScript + Vite
+# 🚀 Infra Dashboard - Gestión de Sistemas IT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un panel de control avanzado para el monitoreo de infraestructura tecnológica, diseñado para centralizar la visibilidad de servicios críticos en entornos corporativos (específicamente optimizado para sectores de construcción y minería).
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologías Utilizadas
+* **Frontend:** React 18 + TypeScript (TSX).
+* **Estilos:** Tailwind CSS v4 (Modo Oscuro nativo).
+* **Iconografía:** Lucide React.
+* **Enrutamiento:** React Router Dom.
+* **Arquitectura:** Diseño basado en componentes modulares y escalables.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📊 Módulos Principales
+* **VMware Cluster Management:** Monitoreo de salud de hosts ESXi, consumo de CPU/RAM y estado de nodos.
+* **Microsoft Entra ID (Azure AD):** Gestión de cumplimiento de seguridad, auditoría de MFA y control de licenciamiento M365 Business Premium.
+* **SINCO ERP (ADPRO):** Visualización del estado de bases de datos SQL Server y latencia de servicios core.
+* **Seguridad:** Integración de reportes de cumplimiento de Intune y backups via Microsoft Purview.
 
-## React Compiler
+## ⚙️ Características Técnicas
+* **Filtrado Inteligente:** Buscador funcional que permite navegar entre recursos mediante comandos (IPs, nombres de servidores).
+* **Interfaz Adaptativa:** Header con buscador global, sistema de notificaciones en tiempo real y perfil de usuario.
+* **Código Limpio:** Implementación de interfaces de TypeScript para asegurar la integridad de los datos de infraestructura.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 👩‍💻 Sobre la Autora
+Desarrollado por **Gianny Vargas**, Ingeniera de Sistemas.
